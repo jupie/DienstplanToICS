@@ -165,11 +165,11 @@ if __name__ == '__main__':
                    '#######by Jannik Upmann##########\n'
                    '#######jannik-upmann.de##########\n'
                    '#################################\n'
-                   ''
+                   '\n'
                    'Bitte Wählen Sie Ihren Dienstplan export'
                    '')
     result = easygui.fileopenbox('Bitte Wählen Sie Ihren Dienstplan export')
-    with open('dienste.csv') as csv_file:
+    with open('./dienste.csv') as csv_file:
         reader = csv.reader(csv_file)
         dienste_array = [line for line in reader]
 
